@@ -1,2 +1,11 @@
-h1 This is a Partial
-h2 {{ myVar }}
+.container
+	.jumbotron
+		h1 MEAN Tutorial
+		p Welcome to my MEAN stack practice page! This web app was composed entirely in MongoDB, ExpressJS, AngularJS, and NodeJS 
+		
+		
+	.row
+		.col-md-6
+			div(ng-include="'/partials/featured-courses'")
+		.col-md-6
+			div(ng-include="'/partials/new-courses'")
